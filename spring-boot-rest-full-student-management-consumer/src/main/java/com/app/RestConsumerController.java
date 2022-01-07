@@ -40,5 +40,9 @@ public class RestConsumerController {
 		HttpEntity<Student> entity = new HttpEntity<>(student, headers);
 		return restTemplate.exchange(STUDENT_URL, HttpMethod.POST, entity, String.class).getBody();
 	}
+	
+	public void gitDemo(){
+		System.out.println("gitDemo"); 
+	}		
 
 }
